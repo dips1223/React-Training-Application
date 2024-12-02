@@ -1,0 +1,22 @@
+.lifecycle-demo {
+    text-align: center;
+    background-color: #fff3e0;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .lifecycle-demo button {
+    background-color: #ff9800;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .lifecycle-demo button:hover {
+    background-color: #e65100;
+  }
+  

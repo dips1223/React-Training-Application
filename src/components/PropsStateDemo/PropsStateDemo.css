@@ -1,0 +1,22 @@
+.props-state-demo {
+    text-align: center;
+    background-color: #e8f5e9;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .props-state-demo button {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .props-state-demo button:hover {
+    background-color: #388e3c;
+  }
+  
