@@ -1,0 +1,30 @@
+// Home.module.scss
+//variables
+$primary-color: #3498db;
+
+// Defining a mixin
+@mixin button-styles($bg-color, $text-color) {
+    background-color: $bg-color;
+    color: $text-color;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+//nesting styling
+.container {
+  border: 1px solid $primary-color;
+  padding: 20px;
+  border-radius: 10px;
+  
+  .title {
+    color: darken($primary-color, 10%);
+    font-size: 24px;
+    font-weight: bold;
+  }
+
+  .button {
+    @include button-styles(#3498db, white);
+  }
+}

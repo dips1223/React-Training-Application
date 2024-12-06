@@ -1,22 +1,23 @@
 import React from 'react';
-import './App.css';
-import ClassComponentDemo from './components/ClassComponentDemo/ClassComponentDemo';
-import LifecycleDemo from './components/LifecycleDemo/LifecycleDemo';
-import PropsStateDemo from './components/PropsStateDemo/PropsStateDemo';
-import FunctionalVsClass from './components/FunctionalVsClass/FunctionalVsClass';
+import { Routes, Route } from 'react-router-dom';
+import About from './components/About/About';
+import Product from './components/Product/Product';
+import Navbar from './components/Navbar/navbar';
+import Home from './components/Home/Home';
 
-function App() {
+const App = () => {
   return (
-    <div className="container">
-      <ClassComponentDemo />
-      <hr />
-      <LifecycleDemo />
-      <hr />
-      <PropsStateDemo parentMessage="Welcome! Experience the power of seamless communication between components." />
-      <hr />
-      <FunctionalVsClass />
-    </div>
+    <>
+      <Navbar />
+      <div className="content">
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/product/:id" element={<Product />} />
+        </Routes>
+      </div>
+    </>
   );
-}
+};
 
 export default App;
